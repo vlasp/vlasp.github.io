@@ -10,19 +10,42 @@
             color: #f8f8f2; /* Light text color for contrast */
             font-family: 'Arial', sans-serif; /* Modern font */
             display: flex;
-            justify-content: center; /* Center the content horizontally */
-            align-items: center; /* Center the content vertically */
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center; /* Center the content vertically */
+            align-items: center; /* Center the content horizontally */
             height: 100vh; /* Full viewport height */
             margin: 0; /* Remove default margin */
+            text-align: center; /* Align text in the center */
         }
         h1 {
             font-size: 2em; /* Larger text for the main message */
             border-bottom: 2px solid #6272a4; /* Underline effect */
             padding-bottom: 0.5em;
         }
+        nav {
+            margin-top: 20px; /* Space between the header and the nav */
+        }
+        nav a {
+            color: #8be9fd; /* Light blue color for links for better visibility */
+            text-decoration: none; /* No underlines on links */
+            font-size: 1.2em; /* Slightly larger text for links */
+            margin: 0 15px; /* Spacing between links */
+            padding: 5px 10px; /* Padding around link text */
+            border-radius: 5px; /* Rounded corners for aesthetic */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        nav a:hover {
+            background-color: #6272a4; /* Change background on hover */
+        }
     </style>
 </head>
 <body>
     <h1>I have got to start writing about philosophy</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Articles</a>
+        <a href="#">Contact</a>
+    </nav>
 </body>
 </html>
